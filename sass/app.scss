@@ -1,0 +1,48 @@
+@import 'bower_components/reset-css/_reset';
+
+.spaceBetween {
+	display: flex;
+	justify-content: space-between;
+}
+
+.header {
+	@extend .spaceBetween;
+	align-items: center;
+}
+.top,
+.footer {
+	padding: 50px 0;
+	font-size: 30px;
+	text-align: center;
+	border: 1px solid #000;
+	margin-bottom: 30px;
+}
+.test-logo {
+	max-width: 20%;
+}
+.test-menu--item {
+	display: inline-block;
+}
+.test-menu--item + .test-menu--item {
+	padding-left: 20px;
+}
+.test-menu {
+	padding-right: 20px;
+}
+.test-section {
+	@extend .spaceBetween;
+}
+.test-section--left, 
+.test-section--right {
+	display: inline-block;
+	max-width: 15%;
+	text-align: center;
+}
+.test-section--mid {
+	display: inline-block;
+	max-width: 55%;
+	text-align: center;
+}
+.footer {
+	margin-top: 30px;
+}
