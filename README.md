@@ -31,7 +31,14 @@ __Project contains:__
   * Configure server to share it over network with custom port :****
   * Update gulp file to use variables instead of plain text paths
   * Update gulp file to use autoprefixing, image optimization, serever options as variable objects
-*. PART-*
+*. PART-5
+  * Update project structure to contain to folders
+    * dev (folder should contain sass/less, uncompressed images, unbundled js)
+    * public (folder should contain css in uncompressed and unbundled format, compressed images, unbundled & uncompressed js)
+    * build (folder should contain css in compressed & bundled format, compressed images, compressed & bundled js)
+  * Connect injectCss module for gulp
+  * Connect SCSS linter
+    * Read about linting https://css-tricks.com/stylelint/
 
 
 ###To use project###
