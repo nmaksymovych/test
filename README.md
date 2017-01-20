@@ -31,7 +31,7 @@ __Project contains:__
   * Configure server to share it over network with custom port :****
   * Update gulp file to use variables instead of plain text paths
   * Update gulp file to use autoprefixing, image optimization, serever options as variable objects
-*. PART-5
+6. PART-5 (NEW ❗️❗️❗️)
   * Update project structure to contain to folders
     * dev (folder should contain sass/less, uncompressed images, unbundled js)
     * public (folder should contain css in uncompressed and unbundled format, compressed images, unbundled & uncompressed js)
