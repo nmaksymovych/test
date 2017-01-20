@@ -8,7 +8,10 @@
     "gulp": "^3.9.1",
     "gulp-notify": "^2.2.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp-sass": "^3.1.0",
+    "gulp-scss-lint": "^0.4.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
