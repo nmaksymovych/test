@@ -1,12 +1,14 @@
 @import 'bower_components/reset-css/_reset';
 
-@mixin box-shadow($x, $y, $blur, $color) {
-	box-shadow: $x $y $blur $color;
+@mixin box-shadow($x, $y, $blur, $spread:"", $color) {
+	-webkit-box-shadow: $x $y $blur #{$inset} $color;
+	-moz-box-shadow: $x $y $blur #{$inset} $color;
+	box-shadow: $x $y $blur #{$inset} $color;
 }
 @mixin bgc($bg-color) {
 	background-color: $bg-color;
 }
-@mixin borders($border-top, $border-bottom) {
+@mixin vertical-borders($border-top, $border-bottom) {
 	border-top: $border-top;
 	border-bottom: $border-bottom;
 }
@@ -56,7 +58,7 @@
 	display: inline-block;
 	max-width: 55%;
 	text-align: center;
-	@include borders(1px solid red, 1px solid blue);
+	@include vertical-borders(1px solid red, 1px solid blue);
 }
 .footer {
 	margin-top: 30px;
