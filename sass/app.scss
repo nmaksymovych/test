@@ -1,9 +1,9 @@
 @import 'bower_components/reset-css/_reset';
 
-@mixin box-shadow($x, $y, $blur, $spread:"", $color) {
-	-webkit-box-shadow: $x $y $blur #{$inset} $color;
-	-moz-box-shadow: $x $y $blur #{$inset} $color;
-	box-shadow: $x $y $blur #{$inset} $color;
+@mixin box-shadow($x, $y, $blur, $color, $spread:"") {
+	-webkit-box-shadow: $x $y $blur $color #{$spread};
+	-moz-box-shadow: $x $y $blur $color #{$spread};
+	box-shadow: $x $y $blur $color #{$spread};
 }
 @mixin bgc($bg-color) {
 	background-color: $bg-color;
@@ -31,7 +31,7 @@
 	margin-bottom: 30px;
 }
 .top {
-	@include box-shadow(0, 1px, 5px, red);
+	@include box-shadow(0, 1px, 5px, 10px, red);
 }
 .test-logo {
 	max-width: 20%;
