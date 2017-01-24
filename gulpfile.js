@@ -1,7 +1,8 @@
 var gulp = require('gulp'),
   browserSync = require('browser-sync').create(),
   notify = require("gulp-notify"),
-  sass = require('gulp-sass')
+  sass = require('gulp-sass'),
+  autoprefixer = require('gulp-autoprefixer')
 
 // Static server
 gulp.task('browser-sync', function() {
