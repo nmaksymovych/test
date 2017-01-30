@@ -32,6 +32,7 @@
 }
 .top {
 	@include box-shadow(0, 1px, 5px, 10px, red);
+	transform: scale(.5);
 }
 .test-logo {
 	max-width: 20%;
@@ -63,4 +64,8 @@
 .footer {
 	margin-top: 30px;
 	@include bgc(#eee);
+}
+.img {
+	max-width: 100%;
+	image-rendering: pixelated;
 }
